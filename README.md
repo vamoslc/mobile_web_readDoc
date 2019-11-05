@@ -1,0 +1,2 @@
+# mobile_web_readDoc
+针对目前网上只能通过input上传的形式来在前端加载word文档的情形做出一点修改，使其可以不通过input即可以进行加载。
