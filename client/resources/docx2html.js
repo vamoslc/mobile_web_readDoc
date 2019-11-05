@@ -511,8 +511,6 @@ convertDocX.prototype.handleFileSelect = function(path, filename, typ){
 
 		});
 
-		S('#drop_zone').addClass('loaded').html(output);
-		S('.step1').addClass('checked');
 		};
 		request.send();
 	}
