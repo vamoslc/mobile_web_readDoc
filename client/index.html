@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>docX to (very basic) HTML</title>
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@astronomyblog">
+	<meta name="twitter:url" property="og:url" content="https://slowe.github.io/docx2html/">
+	<meta name="twitter:title" property="og:title" content="docX to (very basic) HTML">
+	<meta name="twitter:description" property="og:description" content="Some javascript to cut down a docx file to the bare basic semantic HTML">
+	<meta name="keywords" content="html,javascript,docx">
+	<link rel="stylesheet" href="resources/style.css">
+	<script src="resources/jszip.min.js"></script>
+	<script src="resources/docx2html.js"></script>
+	<script src="resources/index.js"></script>
+	<script>
+	readDoc('http://localhost:8080/test.docx', function(result){
+		document.getElementById('html').innerHTML = result
+	})
+	</script>
+</head>
+<body>
+
+	
+
+	<div id="content">
+		
+		<h2>Rendered HTML output</h2>
+		<div id="html"></div>
+
+	</div>
+
+</body>
+</html>
+
